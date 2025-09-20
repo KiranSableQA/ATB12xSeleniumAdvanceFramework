@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.*;
 
 public class TestVWOLogin_01_NormalScript_POM {
 
-    @Owner("PRAMOD")
+    @Owner("Kiran")
     @Description("Verify that with invalid email, pass, error message is shown on the app.vwo.com")
     @Test
     public void test_negative_vwo_login() {
@@ -27,13 +27,14 @@ public class TestVWOLogin_01_NormalScript_POM {
         // Assertions - 3
         assertThat(error_msg).isNotNull().isNotBlank().isNotEmpty();
         Assert.assertEquals(error_msg,"Your email, password, IP address or location did not match");
+        System.out.println(error_msg);
 
         driver.quit();
 
 
     }
 
-    @Owner("PRAMOD")
+    @Owner("Kiran")
     @Description("TC#2-Verify that valid creds dashboard page is loaded")
     @Test
     public void testLoginPositiveVWO() {
@@ -50,6 +51,7 @@ public class TestVWOLogin_01_NormalScript_POM {
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
         Assert.assertEquals(usernameLoggedIn,"Amcret");
 
+        System.out.println(usernameLoggedIn);
 
         driver.quit();
 

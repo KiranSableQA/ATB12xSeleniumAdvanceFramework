@@ -15,7 +15,8 @@ public class DashBoardPage {
 
     private By userNameOnDashboard = By.xpath("//h6");
     // Page Actions
-    public String loggedInUserName(){
+    public String loggedInUserName()
+    {
         WaitHelpers.waitJVM(10000);
         driver.get("https://app.vwo.com/#/dashboard");
         return driver.findElement(userNameOnDashboard).getText();

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/kiran/IdeaProjects/ATB12XSeleniumAdvanceFramework/src/test/java/Com/tesringacdemy/tests/pageObjectModule_Test/vwo/TestVWOLogin_01_NormalScript_POM.java">
+    <test verbose="2" preserve-order="true" parallel="methods" thread-count="2"
+          name="C:/Users/kiran/IdeaProjects/ATB12XSeleniumAdvanceFramework/src/test/java/Com/tesringacdemy/tests/pageObjectModule_Test/vwo/TestVWOLogin_01_NormalScript_POM.java">
         <classes>
             <class name="Com.tesringacdemy.tests.pageObjectModule_Test.vwo.TestVWOLogin_01_NormalScript_POM">
     <methods>
